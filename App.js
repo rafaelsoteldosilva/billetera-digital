@@ -1,21 +1,59 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+import {
+    SafeAreaView,
+    ScrollView,
+    StatusBar,
+    StyleSheet,
+    Text,
+    View,
+} from "react-native";
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+import { DefaultTheme, NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+import { createDrawerNavigator } from "@react-navigation/drawer";
+
+import { useFonts } from 'expo-font';
+
+import SignUp from "./screens/SignUp";
+import Tabs from "./navigation/Tabs";
+
+const theme = {
+    ...DefaultTheme,
+    colors: {
+        ...DefaultTheme.colors,
+        border: "transparent",
+    },
+};
+
+const stack = createStackNavigator();
+const NavigatorWithDrawer = createDrawerNavigator();
+
+const App = () => {
+    const [loaded] = useFonts({
+        "Roboto-Black": require("./assets/fonts/Roboto-Black.ttf"),
+        "Roboto-Bold": require("./assets/fonts/Roboto-Bold.ttf"),
+        "Roboto-Regular": require("./assets/fonts/Roboto-Regular.ttf"),
+    });
+
+    if (!loaded) {
+        return null;
+    }
+    return (
+        <NavigationContainer theme={theme}>
+            <NavigatorWithDrawer.Navigator
+                screenOptions={{
+                    headerShown: false,
+                }}
+                initialRouteName="SignUp"
+            >
+                <NavigatorWithDrawer.Screen name="SignUp" component={SignUp} />
+
+                {/* Tabs */}
+                <NavigatorWithDrawer.Screen name="Home" component={Tabs} />
+            </NavigatorWithDrawer.Navigator>
+        </NavigationContainer>
+    );
+};
+
+export default App;
