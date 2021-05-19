@@ -65,11 +65,17 @@ navigation
 
 Tabs.js is the component used by App.js to display the bottom tabs when the user is watching the Home screen
 
+screens  
+&nbsp;&nbsp;&nbsp;&nbsp;Home.js  
+&nbsp;&nbsp;&nbsp;&nbsp;Scan.js  
+&nbsp;&nbsp;&nbsp;&nbsp;SignUp.js  
+## General Process
+
 App.js declares the variable 
 ```js
 const NavigatorWithDrawer = createDrawerNavigator();
 ```
-Which is used to create two main screens that will be displayed in the drawer: Tab and SignUp
+Which is used to create two main components that will be displayed in the drawer: Tab and SignUp
 
 The SignUp module shows the registration screen, where the user types name, phone and password
 
