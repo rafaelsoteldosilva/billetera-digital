@@ -1,5 +1,9 @@
 # Digital wallet
 
+<img src="./assets/images/wallet.jpeg"
+     alt="Markdown Monster icon"
+     style="float: left; margin-right: 10px; width: 200px; height: 400px" />
+
 Digital wallet is a small app developed using React Native with Javascript and the Framework EXPO
 
 It is not a functional one, but has all the components a real one should have
