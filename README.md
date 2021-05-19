@@ -119,3 +119,5 @@ Note that special constants are used, as Camera.Constants.Type.back and Camera.C
 ```js
 import { Camera } from "expo-camera";
 ```
+
+(*In order to show the wallet image with no background, I got rid of it using photoshop*)
