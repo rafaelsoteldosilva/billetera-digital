@@ -1,5 +1,5 @@
 # Digital wallet
-
+ 
 <img src="./assets/images/wallet.jpeg"
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px; width: 200px; height: 400px" />
