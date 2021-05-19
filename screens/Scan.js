@@ -123,13 +123,13 @@ const Scan = ({ navigation }) => {
                     backgroundColor: COLORS.white,
                 }}
             >
-                <Text style={{ ...FONTS.h4 }}>Otros medios de pago</Text>
+                <Text style={{ ...FONTS.h4 }}>Other payment methods</Text>
 
                 <View
                     style={{
                         flex: 1,
                         flexDirection: "row",
-                        alignItems: "flex-start",
+                        alignItems: "center",
                         marginTop: SIZES.padding * 2,
                     }}
                 >
@@ -138,7 +138,7 @@ const Scan = ({ navigation }) => {
                             flexDirection: "row",
                             alignItems: "center",
                         }}
-                        onPress={() => alert("Número telefónico")}
+                        onPress={() => alert("Phone number")}
                     >
                         <View
                             style={{
@@ -166,7 +166,7 @@ const Scan = ({ navigation }) => {
                                 ...FONTS.body4,
                             }}
                         >
-                            Número Teléfonico
+                            Phone
                         </Text>
                     </TouchableOpacity>
 
@@ -229,9 +229,9 @@ const Scan = ({ navigation }) => {
                 flashMode={Camera.Constants.FlashMode.off}
                 onBarCodeScanned={onBarCodeRead}
                 androidCameraPermissionOptions={{
-                    title: "Permiso para usar cámara",
+                    title: "Permission to use the camera",
                     message:
-                        "Se requiere de la cámara para lectura de códigos QR",
+                        "Camera is required in order to read QR codes",
                     buttonPositive: "OK",
                     buttonNegative: "Cancel",
                 }}

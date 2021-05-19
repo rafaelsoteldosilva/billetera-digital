@@ -65,7 +65,7 @@ const SignUp = ({ navigation }) => {
                     resizeMode="contain"
                     style={styles.imageInRenderHeader}
                 />
-                <Text style={styles.textInRenderHeader}>Registrarse</Text>
+                <Text style={styles.textInRenderHeader}>Sign Up</Text>
             </TouchableOpacity>
         );
     }
@@ -86,10 +86,10 @@ const SignUp = ({ navigation }) => {
             <View style={styles.renderForm}>
                 {/* Full Name */}
                 <View style={styles.renderFormFullNameView}>
-                    <Text style={styles.fullNameText}>Nombre</Text>
+                    <Text style={styles.fullNameText}>Name</Text>
                     <TextInput
                         style={styles.fullNameTextInput}
-                        placeholder="Escriba su nombre"
+                        placeholder="Type your name"
                         placeholderTextColor={COLORS.dodgerBlue}
                         selectionColor={COLORS.white}
                     />
@@ -168,7 +168,7 @@ const SignUp = ({ navigation }) => {
                                 color: COLORS.white,
                                 ...FONTS.body3,
                             }}
-                            placeholder="Número Telefónico"
+                            placeholder="Phone number"
                             placeholderTextColor={COLORS.dodgerBlue}
                             selectionColor={COLORS.white}
                             keyboardType="numeric"
@@ -189,7 +189,7 @@ const SignUp = ({ navigation }) => {
                             color: COLORS.white,
                             ...FONTS.body3,
                         }}
-                        placeholder="Contraseña"
+                        placeholder="Password"
                         placeholderTextColor={COLORS.dodgerBlue}
                         selectionColor={COLORS.white}
                         secureTextEntry={!showPassword}
@@ -234,7 +234,7 @@ const SignUp = ({ navigation }) => {
                     onPress={() => navigation.navigate("Home")}
                 >
                     <Text style={{ color: COLORS.white, ...FONTS.h3 }}>
-                        Continuar
+                        Continue
                     </Text>
                 </TouchableOpacity>
             </View>

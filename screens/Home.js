@@ -17,14 +17,14 @@ const Home = () => {
             icon: icons.reload,
             color: COLORS.purple,
             backgroundColor: COLORS.lightpurple,
-            description: "Recargar"
+            description: "Reload"
         },
         {
             id: 2,
             icon: icons.send,
             color: COLORS.yellow,
             backgroundColor: COLORS.lightyellow,
-            description: "Transfe- rir"
+            description: "Transfer"
         },
         {
             id: 3,
@@ -38,35 +38,35 @@ const Home = () => {
             icon: icons.wallet,
             color: COLORS.red,
             backgroundColor: COLORS.lightRed,
-            description: "Billetera"
+            description: "Wallet"
         },
         {
             id: 5,
             icon: icons.bill,
             color: COLORS.yellow,
             backgroundColor: COLORS.lightyellow,
-            description: "Factura"
+            description: "Bill"
         },
         {
             id: 6,
             icon: icons.game,
             color: COLORS.primary,
             backgroundColor: COLORS.lightGreen,
-            description: "Juegos"
+            description: "Games"
         },
         {
             id: 7,
             icon: icons.phone,
             color: COLORS.red,
             backgroundColor: COLORS.lightRed,
-            description: "Prepago Móbil"
+            description: "Prepayment"
         },
         {
             id: 8,
             icon: icons.more,
             color: COLORS.purple,
             backgroundColor: COLORS.lightpurple,
-            description: "Más"
+            description: "More"
         },
     ]
 
@@ -74,26 +74,26 @@ const Home = () => {
         {
             id: 1,
             img: images.promoBanner,
-            title: "Bono especial 1",
-            description: "Hazlo tuyo ya!"
+            title: "Special Bonus 1",
+            description: "Grab your bonus now!"
         },
         {
             id: 2,
             img: images.promoBanner,
-            title: "Bono especial 2",
-            description: "Hazlo tuyo ya!"
+            title: "Special Bonus 2",
+            description: "Grab your bonus now!"
         },
         {
             id: 3,
             img: images.promoBanner,
-            title: "Bono especial 3",
-            description: "Hazlo tuyo ya!"
+            title: "Special Bonus 3",
+            description: "Grab your bonus now!"
         },
         {
             id: 4,
             img: images.promoBanner,
-            title: "Bono especial 4",
-            description: "Hazlo tuyo ya!"
+            title: "Special Bonus 4",
+            description: "Grab your bonus now!"
         },
     ]
 
@@ -105,7 +105,7 @@ const Home = () => {
             <View style={{ flexDirection: 'row', marginTop: SIZES.padding * 5, marginBottom: 10 }}>
                 <View style={{ flex: 1 }}>
                     <Text style={{ ...FONTS.h1 }}>Hola!</Text>
-                    <Text style={{ ...FONTS.body4, color: COLORS.gray }}>(Hecho por Rafael Soteldo)</Text>
+                    <Text style={{ ...FONTS.body4, color: COLORS.gray }}>(Made by Rafael Soteldo)</Text>
                 </View>
 
                 <View style={{ alignItems: 'center', justifyContent: 'center' }}>
@@ -117,7 +117,7 @@ const Home = () => {
                             alignItems: 'center',
                             backgroundColor: COLORS.lightGray
                         }}
-                        onPress={() => alert('Hizo click en la campana')}
+                        onPress={() => alert('You clicked the bell')}
                     >
                         <Image
                             source={icons.bell}
@@ -172,7 +172,7 @@ const Home = () => {
 
         const Header = () => (
             <View style={{ marginBottom: SIZES.padding * 2 }}>
-                <Text style={{ ...FONTS.h3, marginVertical: 5 }}>Funciones</Text>
+                <Text style={{ ...FONTS.h3, marginVertical: 5 }}>Special Features</Text>
             </View>
         )
 
@@ -238,12 +238,12 @@ const Home = () => {
                 }}
             >
                 <View style={{ flex: 1, marginVertical: 5 }}>
-                    <Text style={{ ...FONTS.h3 }}>Promociones Especiales</Text>
+                    <Text style={{ ...FONTS.h3 }}>Special promotions</Text>
                 </View>
                 <TouchableOpacity
-                    onPress={() => alert("Click en Ver Todas")}
+                    onPress={() => alert("Clicked 'All'")}
                 >
-                    <Text style={{ marginVertical: 5, ...FONTS.body4, shadowColor: 'black' }}>Ver Todas</Text>
+                    <Text style={{ marginVertical: 5, ...FONTS.body4, shadowColor: 'black' }}>All</Text>
                 </TouchableOpacity>
             </View>
 
